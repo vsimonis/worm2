@@ -55,7 +55,8 @@ class Tracker ( object ):
         self._cap = CaptureManager( 
             cv2.VideoCapture(self.captureSource), 
             self._rawWindow, 
-            self.mirroredPreview, self.resolution)
+            self.mirroredPreview, self.resolution
+        )
 
         actualCols, actualRows = self._cap.getResolution()
         ## from here on out use this resolution 
@@ -75,7 +76,7 @@ class Tracker ( object ):
             'MAXREF': 1000,
             'capCols':actualCols,
             'capRows': actualRows,
-            'color' : False
+            'color'  : False
             }
 
         self._wormFinder = WormFinder( **self.finderArgs )     
