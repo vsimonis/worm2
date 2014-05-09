@@ -34,7 +34,8 @@ class Tracker ( object ):
             6: 'longNoBox.avi',
             7: 'H299.avi',
             8: 'testRec.avi',
-            9: 'longDemo.avi'
+            9: 'longDemo.avi',
+            10: 'worm2014_05_05-12-44-53.avi'
             }
         self.color = True
         self.captureSource = source[int(src)]
@@ -132,7 +133,7 @@ class Tracker ( object ):
 
             self._cap.exitFrame()
             self._rawWindow.processEvents()
-            logt.warning('frame processing took: %0.6f' % (time.time() - t1))
+            logt.debug('frame processing took: %0.6f' % (time.time() - t1))
     
     @property
     def isDebug( self ):

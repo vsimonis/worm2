@@ -34,6 +34,7 @@ git config --global user.name "Valerie Simonis"
 git config --global user.email valerie.simonis@gmail.com
 git config --global color.ui true
 
+cd
 mkdir worm
 cd worm
 git init
